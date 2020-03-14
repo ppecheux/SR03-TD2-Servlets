@@ -1,3 +1,5 @@
+package td2;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author pier
  */
-@WebServlet(urlPatterns = {"/UserVerification"})
-public class UserVerification extends HttpServlet {
+@WebServlet(urlPatterns = {"/hello_world"})
+public class hello_world extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,10 +38,10 @@ public class UserVerification extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet UserVerification</title>");            
+            out.println("<title>Servlet hello_world</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet UserVerification at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet hello_world at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }

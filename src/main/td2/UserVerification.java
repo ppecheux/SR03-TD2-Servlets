@@ -1,3 +1,5 @@
+package td2;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author pier
  */
-@WebServlet(urlPatterns = {"/UserRegister"})
-public class UserRegister extends HttpServlet {
+@WebServlet(urlPatterns = {"/UserVerification"})
+public class UserVerification extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,22 +35,15 @@ public class UserRegister extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<html>\n"
-                    + "<head> <title>TODO supply a title</title> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width,\n"
-                    + "initial-scale=1.0\">\n"
-                    + "</head>\n"
-                    + "<body>\n"
-                    + "<form action=\"/mavenproject1/UserManager\" method=\"post\">\n"
-                    + "<label> First name </label> <input type=\"text\" id=\"frname\" name=\"User first name\"/><br>\n"
-                    + "<label> Familly name </label> <input type=\"text\" id=\"faname\" name=\"User familly name\"/><br>\n"
-                    + "<label> Email </label> <input type=\"email\" id=\"email\" name=\"User email\"/> <br>\n"
-                    + "<label> Password </label> <input type=\"password\" id=\"psw\" name=\"User password\"/><br>\n"
-                    + "<label> male </label> <input type=\"radio\" id=\"male\" name=\"gender\" value=\"male\" checked/><br>\n"
-                    + "<label> female </label> <input type=\"radio\" id=\"female\" name=\"gender\" value=\"female\"/> <br>\n"
-                    + "<input type=\"submit\" value=\"Submit\">\n"
-                    + "</form>\n"
-                    + "</body>\n"
-                    + "</html>");
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet UserVerification</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet UserVerification at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 

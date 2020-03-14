@@ -1,4 +1,4 @@
-package com.mycompany.mavenproject1.resources;
+package td2.com.mycompany.mavenproject1.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

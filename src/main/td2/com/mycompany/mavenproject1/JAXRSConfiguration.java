@@ -1,4 +1,4 @@
-package com.mycompany.mavenproject1;
+package td2.com.mycompany.mavenproject1;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
